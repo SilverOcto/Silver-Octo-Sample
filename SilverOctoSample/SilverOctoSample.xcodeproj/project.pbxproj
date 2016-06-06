@@ -1,0 +1,874 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AC5AAD2484F0CC3632EF1B2 /* Pods_SilverOctoSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6106F8FB192C9F60191BD1 /* Pods_SilverOctoSampleTests.framework */; };
+		314583F41CF7153200C544F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314583EA1CF7153200C544F6 /* AppDelegate.swift */; };
+		314583F61CF7153200C544F6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314583F11CF7153200C544F6 /* SignInViewController.swift */; };
+		314583F71CF7153200C544F6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314583F31CF7153200C544F6 /* Colors.swift */; };
+		314583FD1CF7153E00C544F6 /* SilverOctoSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 314583F91CF7153E00C544F6 /* SilverOctoSample.xcdatamodeld */; };
+		314583FE1CF7153E00C544F6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 314583FC1CF7153E00C544F6 /* Info.plist */; };
+		3152E3F31CE4CAE9008E09F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3152E3F11CE4CAE9008E09F3 /* Main.storyboard */; };
+		3152E3F81CE4CAE9008E09F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3152E3F71CE4CAE9008E09F3 /* Assets.xcassets */; };
+		3152E3FB1CE4CAE9008E09F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3152E3F91CE4CAE9008E09F3 /* LaunchScreen.storyboard */; };
+		3152E4061CE4CAE9008E09F3 /* SilverOctoSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3152E4051CE4CAE9008E09F3 /* SilverOctoSampleTests.swift */; };
+		3152E4111CE4CAE9008E09F3 /* SilverOctoSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3152E4101CE4CAE9008E09F3 /* SilverOctoSampleUITests.swift */; };
+		31B289751CF73833006E8ED1 /* FilesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B289741CF73833006E8ED1 /* FilesListViewController.swift */; };
+		31B289771CF7395F006E8ED1 /* FilesListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B289761CF7395F006E8ED1 /* FilesListDataSource.swift */; };
+		31B289791CF7396A006E8ED1 /* FilesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B289781CF7396A006E8ED1 /* FilesListViewModel.swift */; };
+		31B289861CF73CB5006E8ED1 /* NavigationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B289821CF73CB5006E8ED1 /* NavigationAction.swift */; };
+		31B2898A1CF73CED006E8ED1 /* FilesListNavigationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B289891CF73CED006E8ED1 /* FilesListNavigationAction.swift */; };
+		31B2898D1CF73D85006E8ED1 /* SignInNavigationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2898C1CF73D85006E8ED1 /* SignInNavigationAction.swift */; };
+		31B2898F1CF96ECD006E8ED1 /* FileProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2898E1CF96ECD006E8ED1 /* FileProfileViewController.swift */; };
+		31B289911CF96ED9006E8ED1 /* FileProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B289901CF96ED9006E8ED1 /* FileProfileViewModel.swift */; };
+		31B289941CF984FD006E8ED1 /* FileProfileNavigationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B289931CF984FD006E8ED1 /* FileProfileNavigationAction.swift */; };
+		31B289961CF98A73006E8ED1 /* RootListNavigationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B289951CF98A73006E8ED1 /* RootListNavigationAction.swift */; };
+		31B289981CFA9E61006E8ED1 /* DropboxHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B289971CFA9E61006E8ED1 /* DropboxHelper.swift */; };
+		643B184BB62896E3ADF1E179 /* Pods_SilverOctoSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479632BD404F854EC8F5CC5B /* Pods_SilverOctoSampleUITests.framework */; };
+		F444BF66CC2FF047C39DBC9A /* Pods_SilverOctoSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD820554CF5430106B70F5F2 /* Pods_SilverOctoSample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3152E4021CE4CAE9008E09F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3152E3E21CE4CAE9008E09F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3152E3E91CE4CAE9008E09F3;
+			remoteInfo = SilverOctoSample;
+		};
+		3152E40D1CE4CAE9008E09F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3152E3E21CE4CAE9008E09F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3152E3E91CE4CAE9008E09F3;
+			remoteInfo = SilverOctoSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14D0D9FF23F112DD606D4A9E /* Pods-SilverOctoSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilverOctoSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SilverOctoSample/Pods-SilverOctoSample.release.xcconfig"; sourceTree = "<group>"; };
+		314583EA1CF7153200C544F6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		314583F11CF7153200C544F6 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		314583F31CF7153200C544F6 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		314583FA1CF7153E00C544F6 /* SilverOctoSample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SilverOctoSample.xcdatamodel; sourceTree = "<group>"; };
+		314583FC1CF7153E00C544F6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3152E3EA1CE4CAE9008E09F3 /* SilverOctoSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilverOctoSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3152E3F21CE4CAE9008E09F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3152E3F71CE4CAE9008E09F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3152E3FA1CE4CAE9008E09F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3152E4011CE4CAE9008E09F3 /* SilverOctoSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SilverOctoSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3152E4051CE4CAE9008E09F3 /* SilverOctoSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilverOctoSampleTests.swift; sourceTree = "<group>"; };
+		3152E4071CE4CAE9008E09F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3152E40C1CE4CAE9008E09F3 /* SilverOctoSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SilverOctoSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3152E4101CE4CAE9008E09F3 /* SilverOctoSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilverOctoSampleUITests.swift; sourceTree = "<group>"; };
+		3152E4121CE4CAE9008E09F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31B289741CF73833006E8ED1 /* FilesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesListViewController.swift; sourceTree = "<group>"; };
+		31B289761CF7395F006E8ED1 /* FilesListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesListDataSource.swift; sourceTree = "<group>"; };
+		31B289781CF7396A006E8ED1 /* FilesListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesListViewModel.swift; sourceTree = "<group>"; };
+		31B289821CF73CB5006E8ED1 /* NavigationAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationAction.swift; sourceTree = "<group>"; };
+		31B289891CF73CED006E8ED1 /* FilesListNavigationAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesListNavigationAction.swift; sourceTree = "<group>"; };
+		31B2898C1CF73D85006E8ED1 /* SignInNavigationAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInNavigationAction.swift; sourceTree = "<group>"; };
+		31B2898E1CF96ECD006E8ED1 /* FileProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileProfileViewController.swift; sourceTree = "<group>"; };
+		31B289901CF96ED9006E8ED1 /* FileProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileProfileViewModel.swift; sourceTree = "<group>"; };
+		31B289931CF984FD006E8ED1 /* FileProfileNavigationAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileProfileNavigationAction.swift; sourceTree = "<group>"; };
+		31B289951CF98A73006E8ED1 /* RootListNavigationAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootListNavigationAction.swift; sourceTree = "<group>"; };
+		31B289971CFA9E61006E8ED1 /* DropboxHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropboxHelper.swift; sourceTree = "<group>"; };
+		3A9A5E0C55C03751E428F0E4 /* Pods-SilverOctoSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilverOctoSampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SilverOctoSampleUITests/Pods-SilverOctoSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		450436E2BF32112AEECF57EF /* Pods-SilverOctoSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilverOctoSampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SilverOctoSampleUITests/Pods-SilverOctoSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		479632BD404F854EC8F5CC5B /* Pods_SilverOctoSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SilverOctoSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A11225943EDE074BCCCEC617 /* Pods-SilverOctoSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilverOctoSampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SilverOctoSampleTests/Pods-SilverOctoSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3DE4E3C942DAE08A6FDADD7 /* Pods-SilverOctoSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilverOctoSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SilverOctoSample/Pods-SilverOctoSample.debug.xcconfig"; sourceTree = "<group>"; };
+		CD820554CF5430106B70F5F2 /* Pods_SilverOctoSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SilverOctoSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA2118626771FBDF025A43F4 /* Pods-SilverOctoSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilverOctoSampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SilverOctoSampleTests/Pods-SilverOctoSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		DF6106F8FB192C9F60191BD1 /* Pods_SilverOctoSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SilverOctoSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3152E3E71CE4CAE9008E09F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F444BF66CC2FF047C39DBC9A /* Pods_SilverOctoSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3152E3FE1CE4CAE9008E09F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AC5AAD2484F0CC3632EF1B2 /* Pods_SilverOctoSampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3152E4091CE4CAE9008E09F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643B184BB62896E3ADF1E179 /* Pods_SilverOctoSampleUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		314583E81CF7153200C544F6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				31B2897A1CF73C70006E8ED1 /* Presentors */,
+				314583E91CF7153200C544F6 /* Application */,
+				314583EB1CF7153200C544F6 /* User-stories */,
+				314583F21CF7153200C544F6 /* Utils */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		314583E91CF7153200C544F6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				314583EA1CF7153200C544F6 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		314583EB1CF7153200C544F6 /* User-stories */ = {
+			isa = PBXGroup;
+			children = (
+				314583EE1CF7153200C544F6 /* FileProfile */,
+				314583EF1CF7153200C544F6 /* FilesList */,
+				314583F01CF7153200C544F6 /* SignIn */,
+			);
+			path = "User-stories";
+			sourceTree = "<group>";
+		};
+		314583EE1CF7153200C544F6 /* FileProfile */ = {
+			isa = PBXGroup;
+			children = (
+				31B2898E1CF96ECD006E8ED1 /* FileProfileViewController.swift */,
+				31B289901CF96ED9006E8ED1 /* FileProfileViewModel.swift */,
+			);
+			path = FileProfile;
+			sourceTree = "<group>";
+		};
+		314583EF1CF7153200C544F6 /* FilesList */ = {
+			isa = PBXGroup;
+			children = (
+				31B289741CF73833006E8ED1 /* FilesListViewController.swift */,
+				31B289761CF7395F006E8ED1 /* FilesListDataSource.swift */,
+				31B289781CF7396A006E8ED1 /* FilesListViewModel.swift */,
+			);
+			path = FilesList;
+			sourceTree = "<group>";
+		};
+		314583F01CF7153200C544F6 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				314583F11CF7153200C544F6 /* SignInViewController.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		314583F21CF7153200C544F6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				314583F31CF7153200C544F6 /* Colors.swift */,
+				31B289971CFA9E61006E8ED1 /* DropboxHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		314583F81CF7153E00C544F6 /* Database model */ = {
+			isa = PBXGroup;
+			children = (
+				314583F91CF7153E00C544F6 /* SilverOctoSample.xcdatamodeld */,
+			);
+			path = "Database model";
+			sourceTree = "<group>";
+		};
+		314583FB1CF7153E00C544F6 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				314583FC1CF7153E00C544F6 /* Info.plist */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		3152E3E11CE4CAE9008E09F3 = {
+			isa = PBXGroup;
+			children = (
+				3152E3EC1CE4CAE9008E09F3 /* SilverOctoSample */,
+				3152E4041CE4CAE9008E09F3 /* SilverOctoSampleTests */,
+				3152E40F1CE4CAE9008E09F3 /* SilverOctoSampleUITests */,
+				3152E3EB1CE4CAE9008E09F3 /* Products */,
+				B5FFCA36124C7CD41B43BA7A /* Pods */,
+				B0FA6423445BAA9E2E428D1F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3152E3EB1CE4CAE9008E09F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3152E3EA1CE4CAE9008E09F3 /* SilverOctoSample.app */,
+				3152E4011CE4CAE9008E09F3 /* SilverOctoSampleTests.xctest */,
+				3152E40C1CE4CAE9008E09F3 /* SilverOctoSampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3152E3EC1CE4CAE9008E09F3 /* SilverOctoSample */ = {
+			isa = PBXGroup;
+			children = (
+				314583F81CF7153E00C544F6 /* Database model */,
+				314583FB1CF7153E00C544F6 /* Resourses */,
+				314583E81CF7153200C544F6 /* Source */,
+				3152E3F11CE4CAE9008E09F3 /* Main.storyboard */,
+				3152E3F71CE4CAE9008E09F3 /* Assets.xcassets */,
+				3152E3F91CE4CAE9008E09F3 /* LaunchScreen.storyboard */,
+			);
+			path = SilverOctoSample;
+			sourceTree = "<group>";
+		};
+		3152E4041CE4CAE9008E09F3 /* SilverOctoSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				3152E4051CE4CAE9008E09F3 /* SilverOctoSampleTests.swift */,
+				3152E4071CE4CAE9008E09F3 /* Info.plist */,
+			);
+			path = SilverOctoSampleTests;
+			sourceTree = "<group>";
+		};
+		3152E40F1CE4CAE9008E09F3 /* SilverOctoSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3152E4101CE4CAE9008E09F3 /* SilverOctoSampleUITests.swift */,
+				3152E4121CE4CAE9008E09F3 /* Info.plist */,
+			);
+			path = SilverOctoSampleUITests;
+			sourceTree = "<group>";
+		};
+		31B2897A1CF73C70006E8ED1 /* Presentors */ = {
+			isa = PBXGroup;
+			children = (
+				31B2897E1CF73CB5006E8ED1 /* NavigationActions */,
+			);
+			path = Presentors;
+			sourceTree = "<group>";
+		};
+		31B2897E1CF73CB5006E8ED1 /* NavigationActions */ = {
+			isa = PBXGroup;
+			children = (
+				31B289921CF984F1006E8ED1 /* FileProfile */,
+				31B2898B1CF73D79006E8ED1 /* SignIn */,
+				31B289881CF73CED006E8ED1 /* FilesList */,
+				31B289811CF73CB5006E8ED1 /* Root */,
+			);
+			path = NavigationActions;
+			sourceTree = "<group>";
+		};
+		31B289811CF73CB5006E8ED1 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				31B289821CF73CB5006E8ED1 /* NavigationAction.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		31B289881CF73CED006E8ED1 /* FilesList */ = {
+			isa = PBXGroup;
+			children = (
+				31B289891CF73CED006E8ED1 /* FilesListNavigationAction.swift */,
+				31B289951CF98A73006E8ED1 /* RootListNavigationAction.swift */,
+			);
+			path = FilesList;
+			sourceTree = "<group>";
+		};
+		31B2898B1CF73D79006E8ED1 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				31B2898C1CF73D85006E8ED1 /* SignInNavigationAction.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		31B289921CF984F1006E8ED1 /* FileProfile */ = {
+			isa = PBXGroup;
+			children = (
+				31B289931CF984FD006E8ED1 /* FileProfileNavigationAction.swift */,
+			);
+			path = FileProfile;
+			sourceTree = "<group>";
+		};
+		B0FA6423445BAA9E2E428D1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD820554CF5430106B70F5F2 /* Pods_SilverOctoSample.framework */,
+				DF6106F8FB192C9F60191BD1 /* Pods_SilverOctoSampleTests.framework */,
+				479632BD404F854EC8F5CC5B /* Pods_SilverOctoSampleUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5FFCA36124C7CD41B43BA7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3DE4E3C942DAE08A6FDADD7 /* Pods-SilverOctoSample.debug.xcconfig */,
+				14D0D9FF23F112DD606D4A9E /* Pods-SilverOctoSample.release.xcconfig */,
+				A11225943EDE074BCCCEC617 /* Pods-SilverOctoSampleTests.debug.xcconfig */,
+				DA2118626771FBDF025A43F4 /* Pods-SilverOctoSampleTests.release.xcconfig */,
+				3A9A5E0C55C03751E428F0E4 /* Pods-SilverOctoSampleUITests.debug.xcconfig */,
+				450436E2BF32112AEECF57EF /* Pods-SilverOctoSampleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3152E3E91CE4CAE9008E09F3 /* SilverOctoSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3152E4151CE4CAE9008E09F3 /* Build configuration list for PBXNativeTarget "SilverOctoSample" */;
+			buildPhases = (
+				9E8C483A4FC4F113FD772B23 /* 📦 Check Pods Manifest.lock */,
+				3152E3E61CE4CAE9008E09F3 /* Sources */,
+				3152E3E71CE4CAE9008E09F3 /* Frameworks */,
+				3152E3E81CE4CAE9008E09F3 /* Resources */,
+				67608CE1F8A3DC35557E1F6F /* 📦 Embed Pods Frameworks */,
+				76343F610F4569BAEA362E08 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SilverOctoSample;
+			productName = SilverOctoSample;
+			productReference = 3152E3EA1CE4CAE9008E09F3 /* SilverOctoSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3152E4001CE4CAE9008E09F3 /* SilverOctoSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3152E4181CE4CAE9008E09F3 /* Build configuration list for PBXNativeTarget "SilverOctoSampleTests" */;
+			buildPhases = (
+				7242A33D69C812DF828C5D9F /* 📦 Check Pods Manifest.lock */,
+				3152E3FD1CE4CAE9008E09F3 /* Sources */,
+				3152E3FE1CE4CAE9008E09F3 /* Frameworks */,
+				3152E3FF1CE4CAE9008E09F3 /* Resources */,
+				EE4989883750139791B06D96 /* 📦 Embed Pods Frameworks */,
+				105CF7A8AD1D5190AAB478DC /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3152E4031CE4CAE9008E09F3 /* PBXTargetDependency */,
+			);
+			name = SilverOctoSampleTests;
+			productName = SilverOctoSampleTests;
+			productReference = 3152E4011CE4CAE9008E09F3 /* SilverOctoSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3152E40B1CE4CAE9008E09F3 /* SilverOctoSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3152E41B1CE4CAE9008E09F3 /* Build configuration list for PBXNativeTarget "SilverOctoSampleUITests" */;
+			buildPhases = (
+				3F5B80C9FCB2921FC4C9667C /* 📦 Check Pods Manifest.lock */,
+				3152E4081CE4CAE9008E09F3 /* Sources */,
+				3152E4091CE4CAE9008E09F3 /* Frameworks */,
+				3152E40A1CE4CAE9008E09F3 /* Resources */,
+				9AE29A3DF904B82578F7CB5B /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3152E40E1CE4CAE9008E09F3 /* PBXTargetDependency */,
+			);
+			name = SilverOctoSampleUITests;
+			productName = SilverOctoSampleUITests;
+			productReference = 3152E40C1CE4CAE9008E09F3 /* SilverOctoSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3152E3E21CE4CAE9008E09F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = SilverOcto;
+				TargetAttributes = {
+					3152E3E91CE4CAE9008E09F3 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					3152E4001CE4CAE9008E09F3 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3152E3E91CE4CAE9008E09F3;
+					};
+					3152E40B1CE4CAE9008E09F3 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3152E3E91CE4CAE9008E09F3;
+					};
+				};
+			};
+			buildConfigurationList = 3152E3E51CE4CAE9008E09F3 /* Build configuration list for PBXProject "SilverOctoSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3152E3E11CE4CAE9008E09F3;
+			productRefGroup = 3152E3EB1CE4CAE9008E09F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3152E3E91CE4CAE9008E09F3 /* SilverOctoSample */,
+				3152E4001CE4CAE9008E09F3 /* SilverOctoSampleTests */,
+				3152E40B1CE4CAE9008E09F3 /* SilverOctoSampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3152E3E81CE4CAE9008E09F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				314583FE1CF7153E00C544F6 /* Info.plist in Resources */,
+				3152E3FB1CE4CAE9008E09F3 /* LaunchScreen.storyboard in Resources */,
+				3152E3F81CE4CAE9008E09F3 /* Assets.xcassets in Resources */,
+				3152E3F31CE4CAE9008E09F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3152E3FF1CE4CAE9008E09F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3152E40A1CE4CAE9008E09F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		105CF7A8AD1D5190AAB478DC /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SilverOctoSampleTests/Pods-SilverOctoSampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F5B80C9FCB2921FC4C9667C /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		67608CE1F8A3DC35557E1F6F /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SilverOctoSample/Pods-SilverOctoSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7242A33D69C812DF828C5D9F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		76343F610F4569BAEA362E08 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SilverOctoSample/Pods-SilverOctoSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AE29A3DF904B82578F7CB5B /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SilverOctoSampleUITests/Pods-SilverOctoSampleUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E8C483A4FC4F113FD772B23 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EE4989883750139791B06D96 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SilverOctoSampleTests/Pods-SilverOctoSampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3152E3E61CE4CAE9008E09F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31B289911CF96ED9006E8ED1 /* FileProfileViewModel.swift in Sources */,
+				31B289771CF7395F006E8ED1 /* FilesListDataSource.swift in Sources */,
+				31B2898F1CF96ECD006E8ED1 /* FileProfileViewController.swift in Sources */,
+				314583F71CF7153200C544F6 /* Colors.swift in Sources */,
+				31B289861CF73CB5006E8ED1 /* NavigationAction.swift in Sources */,
+				314583FD1CF7153E00C544F6 /* SilverOctoSample.xcdatamodeld in Sources */,
+				314583F41CF7153200C544F6 /* AppDelegate.swift in Sources */,
+				31B289751CF73833006E8ED1 /* FilesListViewController.swift in Sources */,
+				31B2898D1CF73D85006E8ED1 /* SignInNavigationAction.swift in Sources */,
+				31B289961CF98A73006E8ED1 /* RootListNavigationAction.swift in Sources */,
+				31B2898A1CF73CED006E8ED1 /* FilesListNavigationAction.swift in Sources */,
+				31B289791CF7396A006E8ED1 /* FilesListViewModel.swift in Sources */,
+				314583F61CF7153200C544F6 /* SignInViewController.swift in Sources */,
+				31B289981CFA9E61006E8ED1 /* DropboxHelper.swift in Sources */,
+				31B289941CF984FD006E8ED1 /* FileProfileNavigationAction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3152E3FD1CE4CAE9008E09F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3152E4061CE4CAE9008E09F3 /* SilverOctoSampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3152E4081CE4CAE9008E09F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3152E4111CE4CAE9008E09F3 /* SilverOctoSampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3152E4031CE4CAE9008E09F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3152E3E91CE4CAE9008E09F3 /* SilverOctoSample */;
+			targetProxy = 3152E4021CE4CAE9008E09F3 /* PBXContainerItemProxy */;
+		};
+		3152E40E1CE4CAE9008E09F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3152E3E91CE4CAE9008E09F3 /* SilverOctoSample */;
+			targetProxy = 3152E40D1CE4CAE9008E09F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3152E3F11CE4CAE9008E09F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3152E3F21CE4CAE9008E09F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3152E3F91CE4CAE9008E09F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3152E3FA1CE4CAE9008E09F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3152E4131CE4CAE9008E09F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3152E4141CE4CAE9008E09F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3152E4161CE4CAE9008E09F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3DE4E3C942DAE08A6FDADD7 /* Pods-SilverOctoSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/SilverOctoSample/Resourses/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = so.soSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3152E4171CE4CAE9008E09F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14D0D9FF23F112DD606D4A9E /* Pods-SilverOctoSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/SilverOctoSample/Resourses/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = so.soSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3152E4191CE4CAE9008E09F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A11225943EDE074BCCCEC617 /* Pods-SilverOctoSampleTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SilverOctoSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = silverocto.SilverOctoSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SilverOctoSample.app/SilverOctoSample";
+			};
+			name = Debug;
+		};
+		3152E41A1CE4CAE9008E09F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA2118626771FBDF025A43F4 /* Pods-SilverOctoSampleTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SilverOctoSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = silverocto.SilverOctoSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SilverOctoSample.app/SilverOctoSample";
+			};
+			name = Release;
+		};
+		3152E41C1CE4CAE9008E09F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A9A5E0C55C03751E428F0E4 /* Pods-SilverOctoSampleUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = SilverOctoSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = silverocto.SilverOctoSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SilverOctoSample;
+			};
+			name = Debug;
+		};
+		3152E41D1CE4CAE9008E09F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 450436E2BF32112AEECF57EF /* Pods-SilverOctoSampleUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = SilverOctoSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = silverocto.SilverOctoSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SilverOctoSample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3152E3E51CE4CAE9008E09F3 /* Build configuration list for PBXProject "SilverOctoSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3152E4131CE4CAE9008E09F3 /* Debug */,
+				3152E4141CE4CAE9008E09F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3152E4151CE4CAE9008E09F3 /* Build configuration list for PBXNativeTarget "SilverOctoSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3152E4161CE4CAE9008E09F3 /* Debug */,
+				3152E4171CE4CAE9008E09F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3152E4181CE4CAE9008E09F3 /* Build configuration list for PBXNativeTarget "SilverOctoSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3152E4191CE4CAE9008E09F3 /* Debug */,
+				3152E41A1CE4CAE9008E09F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3152E41B1CE4CAE9008E09F3 /* Build configuration list for PBXNativeTarget "SilverOctoSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3152E41C1CE4CAE9008E09F3 /* Debug */,
+				3152E41D1CE4CAE9008E09F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		314583F91CF7153E00C544F6 /* SilverOctoSample.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				314583FA1CF7153E00C544F6 /* SilverOctoSample.xcdatamodel */,
+			);
+			currentVersion = 314583FA1CF7153E00C544F6 /* SilverOctoSample.xcdatamodel */;
+			path = SilverOctoSample.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3152E3E21CE4CAE9008E09F3 /* Project object */;
+}

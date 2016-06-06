@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Sign In View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SignInViewController" id="BYZ-38-t0r" customClass="SignInViewController" customModule="SilverOctoSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SilverOctoLogo" translatesAutoresizingMaskIntoConstraints="NO" id="RdH-Pv-Jc3">
+                                <rect key="frame" x="127" y="274" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Gkt-Fd-EWm"/>
+                                    <constraint firstAttribute="height" constant="120" id="To9-Bf-JLE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silver octo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ynh-GZ-nmf">
+                                <rect key="frame" x="104" y="197" width="166.5" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WT5-pD-Yk2">
+                                <rect key="frame" x="60" y="613" width="255" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="k6k-iU-e2h"/>
+                                </constraints>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="signInButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dLD-Pv-86O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WT5-pD-Yk2" secondAttribute="trailing" constant="60" id="6GY-J9-fh1"/>
+                            <constraint firstItem="Ynh-GZ-nmf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CDy-LY-5Ks"/>
+                            <constraint firstItem="RdH-Pv-Jc3" firstAttribute="top" secondItem="Ynh-GZ-nmf" secondAttribute="bottom" constant="34" id="EKe-du-Dai"/>
+                            <constraint firstItem="WT5-pD-Yk2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="60" id="WYY-Dq-PjD"/>
+                            <constraint firstItem="RdH-Pv-Jc3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ycd-vq-WAY"/>
+                            <constraint firstItem="RdH-Pv-Jc3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cXd-nu-CCv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WT5-pD-Yk2" secondAttribute="bottom" constant="24" id="lfT-qr-EXB"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gaK-pK-iHY">
+            <objects>
+                <navigationController storyboardIdentifier="RootListViewController" id="zgu-2Z-SNg" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rgp-xG-xGo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2XI-OV-bNI" kind="relationship" relationship="rootViewController" id="TRk-bP-D99"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hyU-Mf-kAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968.5" y="351.5"/>
+        </scene>
+        <!--Files List View Controller-->
+        <scene sceneID="WKW-Sr-BBJ">
+            <objects>
+                <viewController storyboardIdentifier="FilesListViewController" automaticallyAdjustsScrollViewInsets="NO" id="2XI-OV-bNI" customClass="FilesListViewController" customModule="SilverOctoSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RQ7-fr-iTM"/>
+                        <viewControllerLayoutGuide type="bottom" id="0td-0H-dn5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pET-Gd-83K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="reD-hl-Jfc">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="reD-hl-Jfc" firstAttribute="leading" secondItem="pET-Gd-83K" secondAttribute="leading" id="1Qz-GK-rFB"/>
+                            <constraint firstItem="reD-hl-Jfc" firstAttribute="top" secondItem="RQ7-fr-iTM" secondAttribute="bottom" id="OEe-vi-HPh"/>
+                            <constraint firstItem="0td-0H-dn5" firstAttribute="top" secondItem="reD-hl-Jfc" secondAttribute="bottom" id="Vuy-OW-lRt"/>
+                            <constraint firstAttribute="trailing" secondItem="reD-hl-Jfc" secondAttribute="trailing" id="nvG-Ub-FXj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5Xq-GD-2J4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="reD-hl-Jfc" id="6zc-Zq-gjV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gvg-aF-1oS" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1440.5" y="351.5"/>
+        </scene>
+        <!--File Profile View Controller-->
+        <scene sceneID="w9T-sM-CTu">
+            <objects>
+                <viewController storyboardIdentifier="FileProfileViewController" automaticallyAdjustsScrollViewInsets="NO" id="GOc-te-MLx" customClass="FileProfileViewController" customModule="SilverOctoSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="94V-y8-cCm"/>
+                        <viewControllerLayoutGuide type="bottom" id="xEq-w1-r02"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lq5-Ze-SsX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hzG-Ge-qvW"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="owb-zq-ov6" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1878.5" y="351.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SilverOctoLogo" width="120" height="120"/>
+    </resources>
+</document>
